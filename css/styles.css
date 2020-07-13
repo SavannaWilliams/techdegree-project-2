@@ -1,0 +1,11 @@
+img {
+    width: 290px;
+}
+
+#back-to-top {
+    display: inline;
+}
+
+#bottom-nav {
+    display: none;
+}
