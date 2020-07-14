@@ -12,7 +12,54 @@ body {
 
 }
 img {
-    width: 290px;
+    width: 90%;
+}
+
+.profile img {
+    width: 70%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+    display: block;
+    padding: 10px 0;
+    margin: 4px 0;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.wrap {
+    margin-bottom: 100px; /* Offsetting fixed footer's height with some breathing room.*/
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#portfolio {
+    background: #fff;
+}
+
+#contact a {
+    text-decoration: none;
+    color: inherit;
+    padding-left: 10px;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -20,30 +67,14 @@ footer {
     bottom: 0;
     position: fixed;
     width: 100%;
-}
+} /* Holds the footer container. Color makes it opaque, fixed position makes it stick to bottom of page on scroll.*/
 
 .footer-container {
     height: 90px;
     margin: 0 auto;
     width: 90%;
     text-align: center;
-}
-
-/* ================================= 
-  Base Layout Styles
-==================================== */
-.wrap {
-    margin-bottom: 100px;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-#portfolio {
-    background: #fff;
-}
+} /* Holds the actual footer content. Width 90% to match the rest of the site's width. Must offset height with wrapper's margin-bottom.*/
 
 #back-to-top {
     display: inline;
@@ -56,7 +87,7 @@ footer {
   Media Queries
 ==================================== */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .wrap {
     min-height: calc(100vh - 90px);
     margin-bottom: 0;
@@ -80,4 +111,4 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
-}
+} */
