@@ -9,77 +9,83 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header id="home">
-        <div>
-            <h1>Student Name</h1>
-            <nav>
+    <div class="wrap">
+        <header id="home">
+            <div class="container">
+                <div>
+                    <h1>Student Name</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- END title and nav div-->
+                <div>
+                    <img src="images/responsive-layout-profile.png" alt="Student profile photo" >
+                    <p> Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+                </div><!-- END intro div-->
+            </div><!-- END container div-->
+        </header> <!-- END header -->
+
+        <main class="container">
+            <div id="portfolio">
+                <h2>Portfolio</h2>
+                <div>
+                    <img src="images/portfolio-1.png" alt="Marketing page image">
+                    <h3>Marketing Page</h3>
+                    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+                </div>
+                <div>
+                    <img src="images/portfolio-2.png" alt="Search page image">
+                    <h3>Search Page</h3>
+                    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+                </div>
+                <div>
+                    <img src="images/portfolio-3.png" alt="Travel app image">
+                    <h3>Travel App</h3>
+                    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                </div>
+                <div>
+                    <img src="images/portfolio-4.png" alt="Map of favorite spots image">
+                    <h3>Map of Favorite Spots</h3>
+                    <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                </div>
+                <div>
+                    <img src="images/portfolio-5.png" alt="Photo gallery image">
+                    <h3>Photo Gallery</h3>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                </div>
+                <div>
+                    <img src="images/portfolio-6.png" alt="Calculator image">
+                    <h3>Calculator</h3>
+                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                </div>
+            </div><!-- END portfolio-->
+
+            <div id="contact">
+                <h4>CONTACT</h4>
+                <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                <p>Phone <a href="tel:11115551234">+1 (111) 555-1234</a></p>
+                <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+            </div>
+        </main><!-- END main-->
+    </div><!-- END wrapper-->
+
+    <footer>
+        <div class="footer-container">
+            <hr>
+            <h4>Student name</h4>
+            <h4 id="back-to-top"><a href="#home">BACK TO TOP</a></h4>
+            <nav id="bottom-nav">
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-        </div><!-- END title and nav div-->
-        <div>
-            <img src="images/responsive-layout-profile.png" alt="Student profile photo" >
-            <p> Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-        </div><!-- END intro div-->
-    </header> <!-- END header -->
-
-    <main>
-        <div id="portfolio">
-            <h2>Portfolio</h2>
-            <div>
-                <img src="images/portfolio-1.png" alt="Marketing page image">
-                <h3>Marketing Page</h3>
-                <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-            </div>
-            <div>
-                <img src="images/portfolio-2.png" alt="Search page image">
-                <h3>Search Page</h3>
-                <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-            </div>
-            <div>
-                <img src="images/portfolio-3.png" alt="Travel app image">
-                <h3>Travel App</h3>
-                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-            </div>
-            <div>
-                <img src="images/portfolio-4.png" alt="Map of favorite spots image">
-                <h3>Map of Favorite Spots</h3>
-                <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-            </div>
-            <div>
-                <img src="images/portfolio-5.png" alt="Photo gallery image">
-                <h3>Photo Gallery</h3>
-                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-            </div>
-            <div>
-                <img src="images/portfolio-6.png" alt="Calculator image">
-                <h3>Calculator</h3>
-                <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-            </div>
-        </div><!-- END image gallery-->
-
-        <div id="contact">
-            <h4>CONTACT</h4>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <p>Phone <a href="tel:11115551234">+1 (111) 555-1234</a></p>
-            <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
-        </div>
-    </main><!-- END main-->
-
-    <footer>
-        <hr>
-        <h4>Student name</h4>
-        <h4 id="back-to-top"><a href="#home">BACK TO TOP</a></h4>
-        <nav id="bottom-nav">
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
+        </div><!-- END footer container-->
     </footer><!-- END footer-->
 
 </body>

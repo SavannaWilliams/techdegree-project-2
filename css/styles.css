@@ -1,10 +1,50 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+    background: #fafafa;
+
 }
 img {
     width: 290px;
 }
+
+footer {
+    background: #fff;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer-container {
+    height: 90px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.wrap {
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#portfolio {
+    background: #fff;
+}
+
 #back-to-top {
     display: inline;
 }
@@ -12,9 +52,24 @@ img {
     display: none;
 }
 
-/* START Media Queries */
+/* ================================= 
+  Media Queries
+==================================== */
 
 @media only screen and (min-width: 768px) {
+    .wrap {
+    min-height: calc(100vh - 90px);
+    margin-bottom: 0;
+    }
+
+    footer {
+        position: static;
+    }
+    
+    .footer-container {
+
+    }
+
     #back-to-top {
         display: none;
     }
