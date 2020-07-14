@@ -1,11 +1,28 @@
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
 img {
     width: 290px;
 }
-
 #back-to-top {
     display: inline;
 }
-
 #bottom-nav {
     display: none;
+}
+
+/* START Media Queries */
+
+@media only screen and (min-width: 768px) {
+    #back-to-top {
+        display: none;
+    }
+    #bottom-nav {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
 }
