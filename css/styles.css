@@ -9,10 +9,10 @@
 body {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     background: #fafafa;
-
 }
-img {
-    width: 90%;
+
+p {
+    line-height: 1.4em;
 }
 
 .profile img {
@@ -22,13 +22,13 @@ img {
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 25px;
 }
 
 nav ul li a {
     background: #fff;
     text-decoration: none;
     color: inherit;
-    font-weight: 900;
     display: block;
     padding: 10px 0;
     margin: 4px 0;
@@ -56,14 +56,38 @@ hr {
     text-align: center;
 }
 
+#home {
+    padding: 30px 0 40px 0;
+}
+
+
+.profile {
+    margin-top: 40px;
+}
+
 #portfolio {
     background: #fff;
+    padding:50px 0 60px 0;
+}
+
+.portfolio-tile {
+    padding: 25px 0;
+}
+
+.portfolio-tile img {
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+#contact {
+    padding: 40px 0 60px 0;
 }
 
 #contact a {
     text-decoration: none;
     color: inherit;
     padding-left: 10px;
+    font-weight: 900;
 }
 
 #contact a:hover {
@@ -72,6 +96,7 @@ hr {
 
 footer {
     background: #fff;
+    font-weight: 900;
     bottom: 0;
     position: fixed;
     width: 100%;
@@ -82,10 +107,20 @@ footer {
     margin: 0 auto;
     width: 90%;
     text-align: center;
+    
 } /* Holds the actual footer content. Width 90% to match the rest of the site's width. Must offset height with wrapper's margin-bottom.*/
 
+#bottom-name {
+    float: left;
+    margin: 36px 0;
+}
+
+#back-to-top {
+    float: right;
+    margin: 36px 0;
+}
+
 #back-to-top a {
-    display: inline;
     text-decoration: none;
     color: inherit;
 }
@@ -96,6 +131,12 @@ footer {
 
 #bottom-nav {
     display: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* ================================= 
