@@ -143,20 +143,50 @@ footer {
   Media Queries
 ==================================== */
 
-/* @media only screen and (min-width: 768px) {
-    .wrap {
-    min-height: calc(100vh - 90px);
-    margin-bottom: 0;
+@media only screen and (min-width: 768px) {
+    
+    nav ul li {
+        display: inline-block;
+        margin: 0 5px 0 5px;
     }
+    
+    .profile img {
+        width: 50%;
+    }
+    
+    .profile p {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .portfolio-tile {
+        width: 50%;
+        float: left;
+    }
+    .portfolio-tile img {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    .portfolio-tile p {
+        max-width: 80%;
+    }
+
+
+    /* Make footer sticky */
+    .wrap {
+        min-height: calc(100vh - 90px);
+        margin-bottom: 0;
+        }
 
     footer {
         position: static;
     }
     
     .footer-container {
-
     }
 
+    /* Turn off back to top link, turn on bottom nav */
     #back-to-top {
         display: none;
     }
@@ -165,6 +195,6 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
 
 } */
