@@ -169,9 +169,9 @@ footer {
         margin-bottom: 15px;
     }
     .portfolio-tile p {
-        max-width: 80%;
+        max-width: 70%;
+        margin: 0 auto;
     }
-
 
     /* Make footer sticky */
     .wrap {
@@ -183,8 +183,6 @@ footer {
         position: static;
     }
     
-    .footer-container {
-    }
 
     /* Turn off back to top link, turn on bottom nav */
     #back-to-top {
@@ -192,6 +190,7 @@ footer {
     }
     #bottom-nav {
         display: inline;
+        float: right;
     }
 }
 
