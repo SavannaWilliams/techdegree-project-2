@@ -11,6 +11,19 @@ body {
     background: #fafafa;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Francois One', 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    letter-spacing: 2px;
+    color: #007599;
+}
+
 p {
     line-height: 1.4em;
 }
@@ -23,15 +36,18 @@ nav ul {
     list-style: none;
     padding: 0;
     margin-top: 25px;
+    letter-spacing: 2px;
+
 }
 
 nav ul li a {
-    background: #fff;
+    background: #007599;
     text-decoration: none;
     color: inherit;
     display: block;
     padding: 10px 0;
     margin: 4px 0;
+    color: white;
 }
 
 nav ul li a:hover {
@@ -70,8 +86,17 @@ hr {
     padding:50px 0 40px 0;
 }
 
+#portfolio h3:first-child {
+    color: #007599;
+}
+
 .portfolio-tile {
     padding: 25px 0;
+}
+
+.portfolio-tile h3 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 .portfolio-tile img {
@@ -83,8 +108,10 @@ hr {
     padding: 40px 0 60px 0;
 }
 
-#contact h4 {
+#contact h3 {
     padding-bottom: 30px;
+    color: #007599;
+
 }
 
 #contact a {
@@ -117,10 +144,10 @@ footer { /* Holds the footer container. Color makes it opaque, fixed position ma
     text-align: center;
 } 
 
-.footer-container p,
 .footer-container a {
     font-size: .8rem;
 }
+
 #bottom-name {
     float: left;
     margin: 36px 0;
@@ -163,9 +190,13 @@ footer { /* Holds the footer container. Color makes it opaque, fixed position ma
 
     nav ul li {
         display: inline-block;
-        margin: 0 5px 0 5px;
     }
     
+    nav ul li a {
+        padding: 10px 20px;
+
+    }
+
     .profile img {
         width: 45%;
         float: right;
