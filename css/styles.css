@@ -102,22 +102,25 @@ hr {
     padding-top: 30px;
 }
 
-footer {
+footer { /* Holds the footer container. Color makes it opaque, fixed position makes it stick to bottom of page on scroll.*/
     background: #fff;
     font-weight: 900;
     bottom: 0;
     position: fixed;
     width: 100%;
-} /* Holds the footer container. Color makes it opaque, fixed position makes it stick to bottom of page on scroll.*/
+} 
 
-.footer-container {
+.footer-container { /* Holds the actual footer content. Width 90% to match the rest of the site's width. Must offset height with wrapper's margin-bottom.*/
     height: 90px;
     margin: 0 auto;
     width: 90%;
     text-align: center;
-    
-} /* Holds the actual footer content. Width 90% to match the rest of the site's width. Must offset height with wrapper's margin-bottom.*/
+} 
 
+.footer-container p,
+.footer-container a {
+    font-size: .8rem;
+}
 #bottom-name {
     float: left;
     margin: 36px 0;
@@ -151,6 +154,7 @@ footer {
   Media Queries
 ==================================== */
 
+/* == Tablet media query == */
 @media only screen and (min-width: 768px) {
     
     #home h1 {
@@ -163,7 +167,8 @@ footer {
     }
     
     .profile img {
-        width: 50%;
+        width: 45%;
+        float: right;
     }
     
     .profile p {
@@ -173,6 +178,7 @@ footer {
         padding-right: 30px;
     }
 
+
     #portfolio h4 {
         padding-bottom: 20px;
     }
@@ -181,6 +187,7 @@ footer {
         width: 50%;
         float: left;
     }
+
     .portfolio-tile img {
         width: 95%;
         margin-bottom: 15px;
@@ -221,7 +228,6 @@ footer {
     footer {
         position: static;
     }
-    
 
     /* Turn off back to top link, turn on bottom nav */
     #back-to-top {
@@ -233,6 +239,40 @@ footer {
     }
 }
 
-/* @media only screen and (min-width: 1024px) {
 
-} */
+/* == Desktop media query == */
+@media only screen and (min-width: 1024px) {
+
+    .container {
+        width: 85%;
+    }
+
+    #home nav ul {
+        float: right;
+    }
+
+    #home h1 {
+        display: inline;
+        float: left;
+    }
+    .profile img {
+        width: 45%;
+    }
+
+    .profile p {
+        width: 50%;
+    }
+
+    #portfolio {
+        margin: 0 auto;
+    }
+    .portfolio-tile {
+        width: 33.3%;
+    }
+
+    #contact {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+}
