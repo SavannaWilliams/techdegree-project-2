@@ -67,7 +67,7 @@ hr {
 
 #portfolio {
     background: #fff;
-    padding:50px 0 60px 0;
+    padding:50px 0 40px 0;
 }
 
 .portfolio-tile {
@@ -83,6 +83,10 @@ hr {
     padding: 40px 0 60px 0;
 }
 
+#contact h4 {
+    padding-bottom: 30px;
+}
+
 #contact a {
     text-decoration: none;
     color: inherit;
@@ -92,6 +96,10 @@ hr {
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+.contact-info {
+    padding-top: 30px;
 }
 
 footer {
@@ -145,6 +153,10 @@ footer {
 
 @media only screen and (min-width: 768px) {
     
+    #home h1 {
+        padding-top: 20px;
+    }
+
     nav ul li {
         display: inline-block;
         margin: 0 5px 0 5px;
@@ -158,6 +170,11 @@ footer {
         width: 50%;
         float: left;
         text-align: left;
+        padding-right: 30px;
+    }
+
+    #portfolio h4 {
+        padding-bottom: 20px;
     }
 
     .portfolio-tile {
@@ -168,9 +185,31 @@ footer {
         width: 95%;
         margin-bottom: 15px;
     }
+
+    .portfolio-tile h3 {
+        padding-bottom: 20px;
+    }
+
     .portfolio-tile p {
-        max-width: 70%;
+        max-width: 80%;
         margin: 0 auto;
+    }
+
+    #contact {
+        clear: both;
+    }
+
+    #contact h4 {
+        padding-bottom: 40px;
+    }
+
+    #contact {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .contact-info p:first-child {
+        padding-bottom: 10px;
     }
 
     /* Make footer sticky */
