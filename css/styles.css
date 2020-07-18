@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background: #004b62;
 }
 
 hr {
@@ -72,21 +72,24 @@ hr {
     text-align: center;
 }
 
+/* == PROFILE == */
+
 #home {
     padding: 30px 0 40px 0;
 }
 
-
 .profile {
     margin-top: 40px;
 }
+
+/* == PORTFOLIO == */
 
 #portfolio {
     background: #fff;
     padding:50px 0 40px 0;
 }
 
-#portfolio h3:first-child {
+.container h3:first-child {
     color: #007599;
 }
 
@@ -103,6 +106,89 @@ hr {
     width: 90%;
     margin-bottom: 15px;
 }
+
+/* == SKILLS == */
+
+#skills {
+    padding-bottom: 40px;
+}
+
+.skill-tile {
+    margin: 0 auto;
+}
+
+.skill-tile p {
+    padding-bottom: 15px;
+}
+
+.web-skills {
+    padding-bottom: 30px;
+}
+
+/* Bars */
+.bar {
+    background-color: lightgray;
+    border-radius: 20px;
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  
+  .bar-skill{
+    background-color: #007599;
+    height: 24px;
+    border-radius: 20px;
+  }
+  
+  .bar p {
+    padding-left: 10px;
+    color: white;
+  }
+  
+  /* UI/UX Skill Bars */
+  
+  .bar-mockups {
+    width: 100%;
+  }
+  .bar-prototypes {
+    width: 100%;
+  
+  }
+  .bar-usability-tests {
+    width: 85%;
+  
+  }
+  .bar-personas {
+    width: 70%;
+  
+  }
+  .bar-journey-maps {
+    width: 70%;
+  }
+  
+  /* Programming Skill Bars */
+  .bar-html {
+    width: 100%;
+  }
+  .bar-css {
+    width: 100%;
+  }
+  .bar-javascript {
+    width: 75%;
+  }
+  .bar-bootstrap {
+    width: 65%;
+  }
+  .bar-react {
+    width: 50%;
+  }
+  
+  .bar p {
+    padding-left: 10px;
+    color: white;
+  }
+
+/* == CONTACT == */
 
 #contact {
     padding: 40px 0 60px 0;
@@ -128,6 +214,8 @@ hr {
 .contact-info {
     padding-top: 30px;
 }
+
+/* == FOOTER == */
 
 footer { /* Holds the footer container. Color makes it opaque, fixed position makes it stick to bottom of page on scroll.*/
     background: #fff;
@@ -171,6 +259,8 @@ footer { /* Holds the footer container. Color makes it opaque, fixed position ma
     display: none;
 }
 
+/* == UTILITY STYLES == */
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -209,7 +299,6 @@ footer { /* Holds the footer container. Color makes it opaque, fixed position ma
         padding-right: 30px;
     }
 
-
     #portfolio h4 {
         padding-bottom: 20px;
     }
@@ -231,6 +320,16 @@ footer { /* Holds the footer container. Color makes it opaque, fixed position ma
     .portfolio-tile p {
         max-width: 80%;
         margin: 0 auto;
+    }
+
+    #skills h3 {
+        padding-bottom: 20px;
+    }
+  
+    .skill-tile {
+        width: 40%;
+        float: left;
+        margin: 0 5% 0 5%;
     }
 
     #contact {
@@ -278,6 +377,10 @@ footer { /* Holds the footer container. Color makes it opaque, fixed position ma
         width: 85%;
     }
 
+    .container h3:first-child {
+        font-size: 1.4rem;
+    }
+
     #home nav ul {
         float: right;
     }
@@ -299,6 +402,11 @@ footer { /* Holds the footer container. Color makes it opaque, fixed position ma
     }
     .portfolio-tile {
         width: 33.3%;
+    }
+
+    .skill-tile {
+        width: 50%;
+        margin: 0 0 0 0;
     }
 
     #contact {
